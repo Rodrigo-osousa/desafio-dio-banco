@@ -36,10 +36,11 @@ public abstract class Conta implements InterfaceConta {
 
 
     protected void imprimirInfosComuns() {
+        System.out.println("Banco " + Banco.banco.nome());
         System.out.println("Titular: " + cliente.nome());
         System.out.println("Agencia: " + agencia);
         System.out.println("Numero: " + numero);
-        System.out.println(String.format("Saldo: %.2f" , saldo));
+        System.out.printf("Saldo: %.2f\n" , saldo);
     }
 
 }

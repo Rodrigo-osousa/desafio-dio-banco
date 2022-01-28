@@ -1,22 +1,15 @@
-import java.util.List;
+public record Banco(String nome,
+                    String cnpj,
+                    String endereco) {
 
-public class Banco {
-    private String nome;
-    private List<Conta> contas;
+   public static Banco banco = new Banco("Real","99.999.999/9999-99", "Avenida Real");
 
-    public List<Conta> getContas() {
-        return contas;
     }
 
-    public String getNome() {
-        return nome;
-    }
 
-    @Override
-    public String toString() {
-        return "Banco{" +
-                "nome='" + nome + '\'' +
-                ", contas=" + contas +
-                '}';
-    }
-}
+
+
+
+
+
+

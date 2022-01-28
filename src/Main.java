@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) throws ExcecaoDeNegocios {
-    Cliente rodrigo = new Cliente("Rodrigo",
+        Cliente rodrigo = new Cliente("Rodrigo",
             "Rua NeverLand",
             "999999999");
 
@@ -10,6 +10,7 @@ public class Main {
 
         ContaPoupanca poupanca = new ContaPoupanca(rodrigo);
         cc.transferir(100.00 , poupanca);
+
         cc.imprimirExtrato();
         poupanca.imprimirExtrato();
     }
